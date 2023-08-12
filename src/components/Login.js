@@ -35,7 +35,8 @@ const Content = styled.div`
   width: 100%;
   position: relative;
   min-height: 100vh;
-  box-sizing: border-box; //?even though set up this in index.css?
+  //?even though set up this in index.css?
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
