@@ -12,19 +12,19 @@ const Header = (props) => {
           <span>HOME</span>
         </NavIcon>
         <NavIcon href="/search">
-          <img src="/images/search-icon.svg" alt="HOME" />
+          <img src="/images/search-icon.svg" alt="SEARCH" />
           <span>SEARCH</span>
         </NavIcon>
         <NavIcon href="/watchlist">
-          <img src="/images/watchlist-icon.svg" alt="HOME" />
+          <img src="/images/watchlist-icon.svg" alt="WATCHLIST" />
           <span>WATCHLIST</span>
         </NavIcon>
         <NavIcon href="/originals">
-          <img src="/images/originals-icon.svg" alt="HOME" />
+          <img src="/images/original-icon.svg" alt="ORIGINALS" />
           <span>ORIGINALS</span>
         </NavIcon>
         <NavIcon href="/movies">
-          <img src="/images/movies-icon.svg" alt="HOME" />
+          <img src="/images/movie-icon.svg" alt="HOME" />
           <span>MOVIES</span>
         </NavIcon>
         <NavIcon href="/series">
