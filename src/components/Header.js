@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import styled from "styled-components";
 import { signInWithPopup, auth, provider, signOut } from "../firebase";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, redirect } from "react-router-dom";
 import {
   selectUserName,
   selectUserPhoto,
@@ -23,9 +23,6 @@ const Header = (props) => {
           setUser(user);
           navigate("/home");
         }
-        if (!user) {
-          navigate("/");
-        }
       },
       [userName]
     );
@@ -45,6 +42,7 @@ const Header = (props) => {
       signOut(auth)
         .then(() => {
           dispatch(setSignOutState());
+          navigate("/");
         })
         .catch((error) => {
           alert(error.message);
